@@ -35,13 +35,21 @@ export default class GameWizDevPage extends LitElement {
           description="${this.description}"
         >
           <action-card
+            title="Balance Initialization"
+            description="Initialize Balance"
+            action="payFee"
+            method="post"
+          >
+          </action-card>
+
+          <action-card
             title="Balance"
             description="Get Balance"
             action="getBalance"
             method="get"
           >
           </action-card>
-  
+
           <action-card
             title="Fee Payment"
             description="Pay Fee"
@@ -49,6 +57,7 @@ export default class GameWizDevPage extends LitElement {
             method="post"
           >
           </action-card>
+          
         </page-body>
         <page-panel id="resultPanel"></page-panel>
       `;
