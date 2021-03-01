@@ -9,25 +9,25 @@ const BN = require('bn.js'); // Required for injected code
 
 module.exports = class DappLib {
 
-      /*>>>>>>>>>>>>>>>>>>>>>>>>>>> EXAMPLES: HELLO DEV  <<<<<<<<<<<<<<<<<<<<<<<<<<*/
+      /*>>>>>>>>>>>>>>>>>>>>>>>>>>> EXAMPLES: GameWiz DEV  <<<<<<<<<<<<<<<<<<<<<<<<<<*/
     
-        static async countHellos(data) {
+        static async getBalance(data) {
             let config = DappLib.getConfig();
 
-            let result = await Blockchain.get({ config }, 'greeting');
+            let result = await Blockchain.get({ config }, 'gamewiz');
 
             return {
                 type: DappLib.DAPP_RESULT_BIG_NUMBER,
-                label: 'Get Hello Count',
-                result: result.callData.numGreets
+                label: 'Get Balance',
+                result: result.callData.balance
             }
         }
         
-        static async sayHello() {
+        static async payFee() {
 
             let config = DappLib.getConfig();
 
-            let result = await Blockchain.put({ config }, 'greeting', Buffer.alloc(0));
+            let result = await Blockchain.put({ config }, 'gamewiz', Buffer.alloc(0));
             return {
                 type: DappLib.DAPP_RESULT_OBJECT,
                 label: 'Transaction Result',

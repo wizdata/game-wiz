@@ -32,11 +32,11 @@ export default class HarnessPage extends LitElement {
   getPages() {
     return[
     {
-        "name": "hello_dev",
-        "title": "Hello Dev",
-        "description": "Simple read and write example. This module is required for the Beta.",
+        "name": "gamewiz_dev",
+        "title": "GameWiz Dev",
+        "description": "Game Account Maintenance.",
         "category": "Examples",
-        "route": "/hello_dev"
+        "route": "/gamewiz_dev"
     }
 ]; 
   }

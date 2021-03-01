@@ -9,8 +9,8 @@ import DOM from "../../../lib/components/shared/dom";
 import DappLib from "@decentology/dappstarter-dapplib";
 import { LitElement, html, customElement, property } from "lit-element";
 
-@customElement("hello-dev-page")
-export default class HelloDevPage extends LitElement {
+@customElement("gamewiz-dev-page")
+export default class GameWizDevPage extends LitElement {
     @property()
     title;
     @property()
@@ -27,7 +27,7 @@ export default class HelloDevPage extends LitElement {
     }
   
     render() {
-      /*>>>>>>>>>>>>>>>>>>>>>>>>>>> EXAMPLES: HELLO DEV  <<<<<<<<<<<<<<<<<<<<<<<<<<*/
+      /*>>>>>>>>>>>>>>>>>>>>>>>>>>> EXAMPLES: GameWiz DEV  <<<<<<<<<<<<<<<<<<<<<<<<<<*/
       return html`
         <page-body
           title="${this.title}"
@@ -35,17 +35,17 @@ export default class HelloDevPage extends LitElement {
           description="${this.description}"
         >
           <action-card
-            title="Get Greeting Count"
-            description="Count how many times the greeting was made"
-            action="countHellos"
+            title="Balance"
+            description="Get Balance"
+            action="getBalance"
             method="get"
           >
           </action-card>
   
           <action-card
-            title="Increment Greeting Count"
-            description="Increments the greeting count by one"
-            action="sayHello"
+            title="Fee Payment"
+            description="Pay Fee"
+            action="payFee"
             method="post"
           >
           </action-card>

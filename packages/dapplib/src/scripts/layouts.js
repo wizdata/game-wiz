@@ -5,10 +5,10 @@ module.exports = class DataLayouts {
     static get() {
         let dataLayouts = [];
 
- /*>>>>>>>>>>>>>>>>>>>>>>>>>>> EXAMPLES: HELLO DEV  <<<<<<<<<<<<<<<<<<<<<<<<<<*/
+ /*>>>>>>>>>>>>>>>>>>>>>>>>>>> EXAMPLES: GameWiz DEV  <<<<<<<<<<<<<<<<<<<<<<<<<<*/
   dataLayouts.push({
-      name: 'greeting',
-      layout: BufferLayout.struct([BufferLayout.u32('numGreets')])
+      name: 'gamewiz',
+      layout: BufferLayout.struct([BufferLayout.u32('balance')])
     }
   );
 
